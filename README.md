@@ -8,21 +8,24 @@ The Irregularity Age Map (IAM) for the unsupervised assessment of brain white ma
 
 The irregularity age map (IAM) indicates the degree in which the texture of the neighbourhood around each pixel/voxel differs from the texture of the tissue considered normal. Compared to manually produced WMH binary mask by expert or automatically produced probability mask by machine learning algorithm, information contained/retained in IAM is much richer than the others (see figure below).
 
-![alt text](documentation/information-density.png "Fig.1 FLAIR vs. IAM vs. Probability Map vs. Binary Label of WMH")
+![alt text](documentation/information-density.png "Fig.1: FLAIR vs. IAM vs. Probability Map vs. Binary Label of WMH")
 
 ## Task Adaptation Transfer Learning in MRI using IAM
 
-Flow chart on how to use IAM produced by using unuspervised method of LOTS-IAM [[1]](https://www.biorxiv.org/content/early/2018/05/30/334292). Deep neural networks used in this study are the U-Net and UResNet.
+Flow chart on how to use IAM produced by an unuspervised method of LOTS-IAM [[1]](https://www.biorxiv.org/content/early/2018/05/30/334292). Deep neural networks used in this study are the U-Net and UResNet. By using IAM produced by an unsupervised method LOTS-IAM, expensive manual labels of WMH are not needed. Note that a lot of manual labels of WMH is needed to train a deep neural networks model. Thus, using IAM, the most expensive resource becomes much cheaper.
 
-![alt text](documentation/flowchart.png "Fig.2 Flowchart on how IAM is used as target of deep neural networks.")
+![alt text](documentation/flowchart.png "Fig.2: Flowchart on how IAM is used as target of deep neural networks.")
 
-By using IAM produced by an unsupervised method LOTS-IAM, expensive manual labels of WMH are not needed. Note that a lot of manual labels of WMH is needed to train a deep neural networks model. Thus, using IAM, the most expensive resource becomes much cheaper.
 
 ## Predicting Progression of WMH using IAM
 
-As showed in Fig. 1, IAM has an important characteristic where it retains more texture information than probability map or binary mask of WMH. This is very helpful for predicting the progression of WMH (see figure below).
+As showed in Fig. 1, IAM has an important characteristic where it retains more texture information than probability map or binary mask of WMH. This is very helpful for predicting the progression of WMH (see figure below). Please see the paper for full explanation of the proposed algorithm and discussion.
 
-![alt text](documentation/AgeMap016-4v7.gif "Fig.3 Progression of WMH using IAM.")
+![alt text](documentation/AgeMap016-4v7.gif "Fig.3: Progression of WMH using IAM.")
+
+## Citation
+
+Rachmadi, Muhammad Febrian, Maria Valdés Hernández, and Taku Komura. **Transfer Learning for Task Adaptation of Brain Lesion Assessment and Prediction of Brain Abnormalities Progression/Regression using Irregularity Age Map in Brain MRI.** bioRxiv (2018): 345033. [bioRxiv 345033](https://www.biorxiv.org/content/early/2018/06/12/345033).  doi: [10.1101/345033](https://doi.org/10.1101/345033).
 
 ## Release Notes
 1. 17/07/2018: File created.
@@ -32,6 +35,6 @@ Funds from Indonesia Endowment Fund for Education (LPDP) of Ministry of Finance,
 
 ## References
 
- 1. Muhammad Febrian  Rachmadi,  Maria  Valdés Hernández,  Hongwei  Li,  Ricardo  Guerrero,  Jianguo  Zhang,  Daniel  Rueckert,  Taku  Komura. **Limited One-time Sampling Irregularity Age Map (LOTS-IAM): Automatic Unsupervised Detection of Brain White Matter Abnormalities in Structural Magnetic Resonance Images**. [bioRxiv 334292](https://www.biorxiv.org/content/early/2018/05/30/334292).  doi: [10.1101/334292](https://doi.org/10.1101/334292).
+ 1. Muhammad Febrian Rachmadi,  Maria  Valdés Hernández,  Hongwei  Li,  Ricardo  Guerrero,  Jianguo  Zhang,  Daniel  Rueckert,  Taku  Komura. **Limited One-time Sampling Irregularity Age Map (LOTS-IAM): Automatic Unsupervised Detection of Brain White Matter Abnormalities in Structural Magnetic Resonance Images**. [bioRxiv 334292](https://www.biorxiv.org/content/early/2018/05/30/334292).  doi: [10.1101/334292](https://doi.org/10.1101/334292).
  2. M. F. Rachmadi, M. d. C. Valdés-Hernández and T. Komura, **Automatic Irregular Texture Detection in Brain MRI without Human Supervision**, To be presented in MICCAI 2018, the 21st International Conference on Medical Image Computing and Computer Assisted Intervention. 
  3. M. F. Rachmadi, M. d. C. Valdés-Hernández and T. Komura, **Voxel-based irregularity age map (IAM) for brain's white matter hyperintensities in MRI**, 2017 International Conference on Advanced Computer Science and Information Systems (ICACSIS), Bali, Indonesia, 2017, pp. 321-326.  doi: [10.1109/ICACSIS.2017.8355053](https://doi.org/10.1109/ICACSIS.2017.8355053).
