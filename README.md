@@ -17,15 +17,17 @@ Flow chart on how to use IAM produced by an unuspervised method of LOTS-IAM [[1]
 ![alt text](documentation/flowchart.png "Fig.2: Flowchart on how IAM is used as target of deep neural networks.")
 
 
-## Predicting Progression of WMH using IAM
+## Predicting Regression and Progression of WMH using IAM
 
-As showed in Fig. 1, IAM has an important characteristic where it retains more texture information than probability map or binary mask of WMH. This is very helpful for predicting the progression of WMH (see figure below). Please see the paper for full explanation of the proposed algorithm and discussion.
+As showed in Fig. 1, IAM has an important characteristic where it retains more texture information than probability map or binary mask of WMH. This is very helpful for predicting the regression and progression of WMH (see figure below). Please see the paper for full explanation of the proposed algorithm and discussion.
 
-![alt text](documentation/AgeMap016-4v7.gif "Fig.3: Progression of WMH using IAM.")
+![alt text](documentation/941_S_4100_2011_20_reg_iam_flair.gif "Fig.3: Regression of WMH using IAM.")
+
+![alt text](documentation/941_S_4100_2011_20_prog_iam_flair.gif "Fig.4: Progression of WMH using IAM.")
 
 ## Citation
 
-Rachmadi, Muhammad Febrian, Maria Valdés Hernández, and Taku Komura. **Transfer Learning for Task Adaptation of Brain Lesion Assessment and Prediction of Brain Abnormalities Progression/Regression using Irregularity Age Map in Brain MRI.** bioRxiv (2018): 345033. [bioRxiv 345033](https://www.biorxiv.org/content/early/2018/06/12/345033).  doi: [10.1101/345033](https://doi.org/10.1101/345033).
+Rachmadi M.F., del C. Valdés-Hernández M., Komura T. (2018) **Transfer Learning for Task Adaptation of Brain Lesion Assessment and Prediction of Brain Abnormalities Progression/Regression Using Irregularity Age Map in Brain MRI.** In: Rekik I., Unal G., Adeli E., Park S. (eds) PRedictive Intelligence in MEdicine. PRIME 2018. Lecture Notes in Computer Science, vol 11121. Springer, Cham. doi: [10.1007/978-3-030-00320-3_11](https://doi.org/10.1007/978-3-030-00320-3_11).
 
 ## Release Notes
 1. 17/07/2018: File created.
