@@ -19,7 +19,7 @@ Flow chart on how to use IAM produced by an unuspervised method of LOTS-IAM [[1]
 
 ## Predicting Regression and Progression of WMH using IAM
 
-As showed in Fig. 1, IAM has an important characteristic where it retains more texture information than probability map or binary mask of WMH. This is very helpful for predicting the regression and progression of WMH (see figure below). Please see the paper for full explanation of the proposed algorithm and discussion.
+As showed in Fig. 1, IAM has an important characteristic where it retains more texture information than probability map or binary mask of WMH. This is very helpful for simulating the regression and progression of WMH (see figure below). Please see the paper for full explanation of the proposed algorithm and discussion.
 
 ![alt text](documentation/941_S_4100_2011_20_reg_iam_flair.gif "Fig.3: Regression of WMH using IAM.")
 
